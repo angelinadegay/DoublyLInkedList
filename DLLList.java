@@ -27,13 +27,13 @@ public class DLLList<E> implements ListInterface<E>
     @Override
     public int size() {
 
-        return 0;
+        return numElements;
     }
 
     @Override
     public boolean isEmpty() {
         
-        return false;
+        return header.next == tail;
     }
 
     @Override
